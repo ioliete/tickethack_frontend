@@ -84,11 +84,92 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: space-around;
+}
+
+#trajet {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: -10px;
+}
+
+input {
+    background-color: #F5F5F5;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+#date-trajet {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+#search-button {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: -10px;
+}
+
+.button {
+    background-color: #64A492;
+    padding: 15px 10px;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #output-container {
     grid-area: 6 / 10 / 14 / 14;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#divider {
+    content : '';
+    height : 3px;
+    width: 70%;
+    background-color: #64A492;
+}
+
+#output-msg {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color : #000000
+}
+
+#trip-datas {
+    width: 85%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+#book-button {
+    background-color: #64A492;
+    border : none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    border-radius: 5px;
 }

@@ -27,21 +27,24 @@
             <h2 id="subtitle">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h2>
         </div>
         <div id="input-container">
-            <div id="trajet" class="style-left">
-              <input type="text" name="departure" placeholder="departure" required>
-              <input type="text" id="input-arrival" name="arrival" placeholder="arrival" required>
-            </div>  
-              <div class="style-left">
-                <input type="date" name="date" required>
-              </div>
-              <div id="search-button">
-                <button class="button" value="Search">Search</button>
-              </div>
+            <div id="trajet">
+                <input type="text" id="input-departure" name="departure" placeholder="Departure" required>
+                <input type="text" id="input-arrival" name="arrival" placeholder="Arrival" required>
             </div>
-        <div id="output-container">
-            <h3>It's time to book your future trip.</h3>
+            <div id="date-trajet">
+                <input type="date" id="input-date" name="date" value="" required>
+            </div>
+            <div id="search-button">
+                <button class="button" value="Search">Search</button>
+            </div>
         </div>
+        <div id="output-container">
+            <img src="./images/train.png" class="output-img" style="width: 40%;">
+            <div id="divider"></div>
+            <h3 id="output-msg">It's time to book your future trip.</h3>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
