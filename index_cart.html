@@ -7,10 +7,20 @@
     <title>My cart</title>
 </head>
 <body>
-    <div id="myCart">
-        <h2 class="cartElement">My cart</h2>
-
-        <div id="tripContainer" class="">
+    <div id="nav-bar">
+        <div id="nav-element"> 
+            <a href="index.html" id="nav-logo">Tickethack</a>
+        </div>
+        <div id="nav-element">
+            <a href="cart.html" id="nav-button">Cart</a>
+        </div>
+        <div id="nav-element">
+            <a href="bookings.html" id="nav-button">Bookings</a>
+        </div>
+    </div>
+    <div id="container">
+        <h2 class="myCart">My cart</h2>
+        <div class="tripContainer">
             <div class="trip">
                 <div id="places">Paris > Lyon</div>
             </div>
@@ -21,14 +31,16 @@
                 <div id="price">103 €</div>
             </div>
             <div class="trip">
-                <span class="delete">✖</span>
+                <button class="delete">✖</button>
             </div>
             
         </div>
-        <div id="total">
+        
+        <div class= "total">
             <div id="priceTotal">Total : </div>
             <button class="button button-purchase">Purchase</button>
         </div>
     </div>
+    
 </body>
 </html>

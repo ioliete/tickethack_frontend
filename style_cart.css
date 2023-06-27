@@ -1,26 +1,118 @@
 body {
+    margin:0;
     background-color: #F0F1F2;
 }
 
-#myCart {
+#container {
     background-color: white;
     height: 30vh;
     width: 70vw;
-    
-
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
 }
 
-#tripContainer {
+.myCart {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    
+}
+
+
+
+h2{
+    text-align:center;
+    font-size: 16px;
+}
+
+.tripContainer {
     background-color: #F6EEEF;
     display: flex;
     justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
 }
 .trip {
-    justify-content: space-between;
+    color: black;
+    
 }
 
-#total {
+
+/*Total purchase */
+.total {
     background-color: #01153F;
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 8;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#priceTotal {
+    color: white;
+}
+
+.button-purchase {
+    background-color: #469E86;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
+
+/*Nav bar */
+#nav-bar {
+    grid-area: 1 / 1 / 2 / 17;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#nav-element {
+    margin: 0px 20px;
+}
+
+#nav-element:last-child {
+    padding: 0px 10px;
+}
+
+#nav-element:first-child {
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+#nav-button {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    text-decoration : none;
+}
+
+#nav-logo {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 800;
+    color: #64A492;
+    text-decoration : none;
+}
+
