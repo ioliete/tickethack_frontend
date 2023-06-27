@@ -1,0 +1,50 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+#nav-bar {
+    grid-area: 1 / 1 / 2 / 17;
+    background-color: red
+}
+
+#home-title {
+    grid-area: 3 / 3 / 5 / 15;;
+    background-color: blue
+}
+
+#input-container {
+    grid-area: 6 / 4 / 13 / 8;
+    background-color: green;
+}
+
+#output-container {
+    grid-area: 6 / 10 / 13 / 14;
+    background-color: greenyellow;
+}
+
+#nav-logo {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: pink;
+}
+
+#nav-bookings {
+    grid-area: 1 / 16 / 2 / 17;
+    background-color: magenta;
+}
+
+#nav-cart {
+    grid-area: 1 / 15 / 2 / 16;
+    background-color: yellow;
+}
