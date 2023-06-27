@@ -153,7 +153,7 @@ input {
     color : #000000
 }
 
-#trip-datas {
+.trip-datas {
     width: 85%;
     display : flex;
     justify-content: space-between;
@@ -166,7 +166,7 @@ input {
     flex-direction: row;
 }
 
-#book-button {
+.book-button {
     background-color: #64A492;
     border : none;
     font-family: 'Montserrat', sans-serif;
