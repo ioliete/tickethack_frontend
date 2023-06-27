@@ -2,49 +2,93 @@
     height: 100vh;
     width: 100vw;
     display: grid;
-    display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
 }
     
 body {
-    background-color: #ffffff;
     margin: 0;
 }
 
 #nav-bar {
     grid-area: 1 / 1 / 2 / 17;
-    background-color: red
+    background-color: white;
+    display: flex;
+    align-items: center;
 }
 
-#home-title {
-    grid-area: 3 / 3 / 5 / 15;;
-    background-color: blue
+#nav-element {
+    margin: 0px 20px;
 }
 
-#input-container {
-    grid-area: 6 / 4 / 13 / 8;
-    background-color: green;
+#nav-element:last-child {
+    padding: 0px 10px;
 }
 
-#output-container {
-    grid-area: 6 / 10 / 13 / 14;
-    background-color: greenyellow;
+#nav-element:first-child {
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+#nav-button {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    text-decoration : none;
 }
 
 #nav-logo {
-    grid-area: 1 / 1 / 2 / 3;
-    background-color: pink;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 800;
+    color: #64A492;
+    text-decoration : none;
 }
 
-#nav-bookings {
-    grid-area: 1 / 16 / 2 / 17;
-    background-color: magenta;
+#home-title {
+    grid-area: 2 / 3 / 5 / 15;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-#nav-cart {
-    grid-area: 1 / 15 / 2 / 16;
-    background-color: yellow;
+#title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top : 20px;
+}
+
+#subtitle {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: #000000 1px 0 10px;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+#input-container {
+    grid-area: 6 / 4 / 14 / 8;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#output-container {
+    grid-area: 6 / 10 / 14 / 14;
+    background-color: white;
+    border-radius: 10px;
 }
