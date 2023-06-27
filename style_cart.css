@@ -1,0 +1,26 @@
+body {
+    background-color: #F0F1F2;
+}
+
+#myCart {
+    background-color: white;
+    height: 30vh;
+    width: 70vw;
+    
+
+}
+
+#tripContainer {
+    background-color: #F6EEEF;
+    display: flex;
+    justify-content: center;
+}
+.trip {
+    justify-content: space-between;
+}
+
+#total {
+    background-color: #01153F;
+    display: flex;
+    justify-content: center;
+}
