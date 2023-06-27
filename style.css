@@ -2,12 +2,10 @@
     height: 100vh;
     width: 100vw;
     display: grid;
-    display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-position: top;
     background-image: url("./images/background.jpg");
     background-size: cover;
 }
@@ -48,6 +46,7 @@ body {
     font-size: 25px;
     font-weight: 800;
     color: #64A492;
+    text-decoration : none;
 }
 
 #home-title {
@@ -81,6 +80,10 @@ body {
     grid-area: 6 / 4 / 14 / 8;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
 }
 
 #output-container {

@@ -13,21 +13,34 @@
     <div class="container">
         <div id="nav-bar">
             <div id="nav-element"> 
-                <h1 id="nav-logo">Tickethack</h1>
+                <a href="index.html" id="nav-logo">Tickethack</a>
             </div>
             <div id="nav-element">
-                <h2 id="nav-button">Cart</h2>
+                <a href="cart.html" id="nav-button">Cart</h2>
             </div>
             <div id="nav-element">
-                <h2 id="nav-button">Bookings</h2>
+                <button id="nav-button">Bookings</h2>
             </div>
         </div>
         <div id="home-title">
             <h1 id="title"> Explore the world effortlessly by train!</h1>
             <h2 id="subtitle">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</h2>
         </div>
-        <div id="input-container"> </div>
-        <div id="output-container"> </div>
+        <div id="input-container">
+            <div id="trajet" class="style-left">
+              <input type="text" name="departure" placeholder="departure" required>
+              <input type="text" id="input-arrival" name="arrival" placeholder="arrival" required>
+            </div>  
+              <div class="style-left">
+                <input type="date" name="date" required>
+              </div>
+              <div id="search-button">
+                <button class="button" value="Search">Search</button>
+              </div>
+            </div>
+        <div id="output-container">
+            <h3>It's time to book your future trip.</h3>
+        </div>
         </div>
     </div>
 </body>
