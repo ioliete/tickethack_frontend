@@ -203,3 +203,37 @@ h2 {
     text-align: center;
     padding: 15px;
 }
+
+#cart-datas {
+    width: 85%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.total {
+    background-color: #01153F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#priceTotal {
+    color: white;
+    margin : 20px;
+}
+
+.button-purchase {
+    background-color: #469E86;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    margin : 20px;
+}
