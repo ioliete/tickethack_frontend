@@ -28,6 +28,7 @@ document.querySelector('#search-button').addEventListener('click', function () {
 
                 document.querySelectorAll('.book-button').forEach(button => {
                     button.addEventListener('click', function () {
+                        
                         const travelInfo = this.parentNode.querySelector('#trip-destination').innerHTML;
                         const departureTime = this.parentNode.querySelector('#trip-date').innerHTML;
                         const price = this.parentNode.querySelector('#trip-price').innerHTML;
