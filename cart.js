@@ -31,12 +31,24 @@ fetch('http://localhost:3000/cart')
             document.querySelector('#my-cart').appendChild(purchase)
             document.querySelector('#priceTotal').textContent = `Total: ${totalPrice} €`
 
+            document.querySelector('#purchase-button').addEventListener('click', function() {
+                fetch('http://localhost:3000/bookings', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({}),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        window.location.assign('bookings.html');
+                    });
+            });
+
             function updateDeleteTrip() {
                 for (let i = 0; i < document.querySelectorAll('.delete-button').length; i++) {
                     document.querySelectorAll('.delete-button')[i].addEventListener('click', function () {
                   const departureTime = this.parentNode.querySelector('div:nth-child(2)').textContent; 
             
-                    fetch(`http://localhost:3000/cart?departureTime=${departureTime}`, { method: 'DELETE' })
+                    fetch(`http://localhost:3000/cart?departureTime=${departureTime}`,{ method: 'DELETE' })
                         .then(response => response.json())
                         .then(data => {
                             if (data) {
@@ -48,7 +60,7 @@ fetch('http://localhost:3000/cart')
             }
             }
             updateDeleteTrip()
-            
+
             });
             
             //Fonction pour mettre à jour le panier total après suppression d'un élément

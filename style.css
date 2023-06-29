@@ -248,12 +248,16 @@ h2 {
 #my-bookings { 
     background-color: white;
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
+    background-color: white;
 }
 
 .bookings-container {
@@ -272,4 +276,19 @@ h2 {
     border : none;
     padding: 8px;
     border-radius: 5px;
+    color: white;
+}
+
+.bookings-datas {
+    margin:10px;
+    width: 85%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    flex-direction: row;
 }
